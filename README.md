@@ -13,15 +13,15 @@ my $pass = 'your_nest_password';
 my $pynest = '/Path/to/nest.py';
 ```
 
-Then add a cron job to your crontab:
+Then add a cron job for the desired frequency:
 
     $ crontab -e
 
-and enter this:
+To run every minute of every day, for example, enter:
 
     * * * * * /path/to/your/repo/pynest-logger.pl
     
-I don't know how often the thermostat actually contacts the Nest servers, so running it every minute might be excessive, but it sure is fun!
+I don't know how often the thermostat connects to the Nest servers, so running it every minute might be excessive, but it sure is fun!
 
 What's Logged?
 --------------
@@ -44,7 +44,7 @@ The data file contains the following values, tab separated:
 14. Nest temperature scale setting
 15. Nest leaf status
 
-What's the data look like?
+The log file has the following format:
 --------------------------
 ```
       Time      name current_temperature target_temperature current_humidity auto_away fan_control_state fan_cooling_state hvac_heater_state
