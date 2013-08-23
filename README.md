@@ -1,7 +1,7 @@
 pynest-logger
 =============
 
-Script to log Nest thermostat details, using the output from the excellent [pynest](https://github.com/smbaker/pynest).
+Script to log Nest thermostat details, using the output from the excellent [pynest](https://github.com/smbaker/pynest) script.
 
 To use the script, edit lines 24-28 specifing your Nest login credentials and where to log the data:
 
@@ -20,6 +20,8 @@ Then add a cron job to your crontab:
 and enter this:
 
     * * * * * /path/to/your/repo/pynest-logger.pl
+    
+I don't know how often the thermostat actually contacts the Nest servers, so running it every minute might be unnecessary.
 
 What's Logged?
 --------------
@@ -61,4 +63,4 @@ Logging one thermostat every minute for a year should use around 50 MB.
 
 Using the Data
 --------------
-
+More scripts to make fancy charts and graphs from the data are on the way!
