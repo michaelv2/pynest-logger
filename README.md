@@ -7,7 +7,7 @@ To use the script, edit lines 24-28 specifing your Nest login credentials and wh
 
 ```perl
 my $outfile = '/Path_to_logfile';   # logfile location
-my @thermostats = (0,1);			      # thermostat index numbers (use 0 for a single thermostat)
+my @thermostats = (0,1);			# thermostat index numbers (use 0 for a single thermostat)
 my $user = 'your_nest_username';
 my $pass = 'your_nest_password';
 my $pynest = '/Path_to_nest.py';
