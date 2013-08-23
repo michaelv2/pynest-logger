@@ -3,7 +3,7 @@ pynest-logger
 
 Script to log Nest thermostat details, using the output from the excellent [pynest](https://github.com/smbaker/pynest) script.
 
-To use the script, edit lines 24-28 specifing your Nest login credentials and where to log the data:
+To use the script, first download pynest, then edit lines 24-28 specifing your Nest login credentials and where to log the data:
 
 ```perl
 my $outfile = '/Path_to_logfile';   # logfile location
