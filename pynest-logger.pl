@@ -39,7 +39,7 @@ foreach ( @thermostats ) {
 	my $query = `$pynest --user $user --password $pass --index $_ show`;
 	my @rows = split( /\n/, $query );
 	foreach ( @rows ) {
-		my @values = split( /\.+:/, $_ );
+		my @values = split( /\.+: /, $_ );
 	 	$data{$values[0]} = $values[1];
 	}
 
