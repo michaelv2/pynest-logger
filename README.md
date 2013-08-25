@@ -20,8 +20,6 @@ Then add a cron job for the desired frequency:
 To run every minute of every day, for example, enter:
 
     * * * * * /path/to/your/repo/pynest-logger.pl
-    
-I don't know how often the thermostat connects to the Nest servers, so running it every minute might be excessive, but it sure is fun!
 
 What's Logged?
 --------------
