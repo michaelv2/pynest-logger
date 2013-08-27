@@ -10,11 +10,11 @@ use warnings;
 # 	target_temperature	thermostat setting
 #	current_humidity	actual humidity
 #	auto_away		is auto-away currently on
-#	fan_control_state	is fan currently on/off
-#	fan_cooling_state	is cooling currently on/off
+#	fan_control_state	is Nest currently controlling fan
+#	hvac_ac_state		is cooling currently on/off
 #	hvac_heater_state	is heat currently on/off
 #	fan_mode		on/auto/duty-cycle
-#	hvac_fan_state		does HVAC unit have fan?
+#	hvac_fan_state		is fan currently on/off
 #	can_cool		does HVAC unit support cooling
 #	can_heat		does HVAC unit support heating
 #	temperature_scale	C/F
@@ -29,7 +29,7 @@ my $pynest = '/Path/to/nest.py';
 
 # variables to log
 my @logged = ( qw(
-	name current_temperature target_temperature current_humidity auto_away fan_control_state fan_cooling_state 
+	name current_temperature target_temperature current_humidity auto_away fan_control_state hvac_ac_state 
 	hvac_heater_state fan_mode hvac_fan_state can_cool can_heat temperature_scale leaf
 ) );
 
