@@ -32,11 +32,11 @@ The data file contains the following values, tab separated:
 4. Target temperature
 5. Current humidity
 6. Auto-away status
-7. Current fan status
+7. Current fan control status
 8. Current cooling status
 9. Current heating status
 10. Fan mode (on/auto/duty-cycle)
-11. HVAC type
+11. Fan on/off
 12. HVAC cooling support
 13. HVAC heating support
 14. Nest temperature scale setting
@@ -45,9 +45,9 @@ The data file contains the following values, tab separated:
 The log file has the following format:
 --------------------------
 ```
-      Time      name current_temperature target_temperature current_humidity auto_away fan_control_state fan_cooling_state hvac_heater_state
- 1377291009  Upstairs               25.31      25.3390000000               59         0             False             False             False
- 1377291010   Kitchen               25.85      25.5555555556               60         0             False             False             False
+       Time      name current_temperature target_temperature current_humidity auto_away fan_control_state hvac_ac_state hvac_heater_state
+ 1377291009  Upstairs               25.31      25.3390000000               59         0             False         False             False
+ 1377291010   Kitchen               25.85      25.5555555556               60         0             False         False             False
     fan_mode hvac_fan_state can_cool can_heat temperature_scale   leaf
   duty-cycle          False     True    False                 F  False
   duty-cycle          False     True    False                 F  False
